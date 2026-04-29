@@ -141,12 +141,12 @@ ros2 topic echo /battery_level
 ---
 ## 🚀 Future Roadmap
 ---
-# 🌡️ Temperature Sensor System
-# 📏 Distance / Obstacle Detection System
-# 🤖 Multi-Sensor Monitoring System
-# 🐢 Turtlesim Automation
-# 🎥 ROS2 + OpenCV Integration
-# 🧭 SLAM Implementation
+- 🌡️Temperature Sensor System
+- 📏 Distance / Obstacle Detection System
+- 🤖 Multi-Sensor Monitoring System
+- 🐢 Turtlesim Automation
+- 🎥 ROS2 + OpenCV Integration
+- 🧭 SLAM Implementation
 
 
 🤝 Connect with Me
