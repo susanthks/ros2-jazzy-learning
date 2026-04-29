@@ -46,7 +46,7 @@ Simulates a robot battery monitoring system with real-time alerts.
 ---
 
 ## 🏗️ Repository Structure
-'''bash
+```bash
 ros2-cpp-learning/
 │
 ├── cpp_pub_sub/
