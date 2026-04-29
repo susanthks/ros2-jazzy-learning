@@ -60,7 +60,7 @@ ros2-cpp-learning/
 │ │ ├── battery_subscriber.cpp
 │
 ├── README.md
-
+bash```
 
 ---
 
