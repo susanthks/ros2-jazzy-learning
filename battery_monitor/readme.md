@@ -97,7 +97,7 @@ This project simulates how robots:
 Such systems are essential in autonomous robots, drones, and industrial automation.
 
 # 🛠️ Technologies Used
-ROS2 Jazzy
-Modern C++ (C++17)
-rclcpp
-Ubuntu Linux
+- ROS2 Jazzy
+- Modern C++ (C++17)
+- rclcpp
+- Ubuntu Linux
