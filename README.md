@@ -90,7 +90,7 @@ ros2 run battery_monitor battery_subscriber
 ---
 ```
 📸 Sample Output
-
+---
 Publisher–Subscriber
 ```bash
 Publishing: Hello I'm Ready: 0
@@ -109,7 +109,9 @@ Battery CRITICAL: 18.5%
 - Modern C++
 - rclcpp
 - Ubuntu Linux
+---
 🚀 Future Work
+---
 - Temperature Sensor System 🌡️
 - Distance Sensor (Obstacle Detection) 📏
 - Multi-Sensor Monitoring System 🤖
@@ -121,6 +123,6 @@ Battery CRITICAL: 18.5%
 To build strong expertise in robotics software development using ROS2 and C++, and apply these concepts in real-world robotic systems.
 
 🤝 Connect with Me
-
+---
 LinkedIn: https://www.linkedin.com/in/susanth-k-s-93a110325/
 
