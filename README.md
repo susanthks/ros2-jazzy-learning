@@ -92,35 +92,35 @@ ros2 run battery_monitor battery_subscriber
 📸 Sample Output
 
 Publisher–Subscriber
-
+```bash
 Publishing: Hello I'm Ready: 0
 Received: Hello I'm Ready: 0
-
+```
 Battery Monitoring
-
+```bash
 Battery OK: 78.5%
 Battery Low: 45.0%
 Battery CRITICAL: 18.5%
-
+```
 ---
 
 🛠️ Technologies Used
-ROS2 Jazzy
-Modern C++
-rclcpp
-Ubuntu Linux
+- ROS2 Jazzy
+- Modern C++
+- rclcpp
+- Ubuntu Linux
 🚀 Future Work
-Temperature Sensor System 🌡️
-Distance Sensor (Obstacle Detection) 📏
-Multi-Sensor Monitoring System 🤖
-Turtlesim Automation
-ROS2 + OpenCV Integration
-SLAM Implementation
+- Temperature Sensor System 🌡️
+- Distance Sensor (Obstacle Detection) 📏
+- Multi-Sensor Monitoring System 🤖
+- Turtlesim Automation
+- ROS2 + OpenCV Integration
+- SLAM Implementation
 🎯 Goal
 
 To build strong expertise in robotics software development using ROS2 and C++, and apply these concepts in real-world robotic systems.
 
 🤝 Connect with Me
 
-LinkedIn: [(https://www.linkedin.com/in/susanth-k-s-93a110325/)]
+LinkedIn: https://www.linkedin.com/in/susanth-k-s-93a110325/
 
