@@ -21,6 +21,7 @@ This project demonstrates a simple Publisher–Subscriber communication system u
 ---
 
 ## 🏗️ Project Structure
+```bash
 cpp_pub_sub/
 ├── src/
 │ ├── publisher.cpp
