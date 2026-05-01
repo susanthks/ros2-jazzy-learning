@@ -42,12 +42,35 @@ Simulation of a robot battery monitoring system with real-time status evaluation
   - ❌ Critical (<20%)
 - Auto reset simulating charging cycle
 
-**Concepts Covered:**
-- Real-time data streaming  
-- State-based decision logic  
-- System health monitoring  
+---
+
+### 🌡️ 3. Temperature Monitoring System
+**Overview:**  
+Simulates environmental temperature sensing in robotic systems.
+
+**Features:**
+- Random temperature generation (20°C → 80°C)  
+- Real-time monitoring and classification:
+  - ✅ Normal (<40°C)  
+  - ⚠️ High (40–60°C)  
+  - ❌ Critical (>60°C)  
+- Foundation for safety-critical systems  
 
 ---
+
+**Concepts Covered:**
+- ROS2 Nodes  
+- Publisher–Subscriber Architecture  
+- Topic-based Communication  
+- Real-Time Data Streaming  
+- Callback Mechanisms  
+- Timer-based Execution  
+- State-based Decision Logic   
+
+---
+
+### 
+
 
 ## 🧠 Core Skills Demonstrated
 
@@ -74,6 +97,16 @@ ros2-cpp-learning/
 │ │ ├── battery_publisher.cpp
 │ │ ├── battery_subscriber.cpp
 │ └── README.md
+│
+├── temperature_sensor/
+│ ├── src/
+│ │ ├── temp_publisher.cpp
+│ │ ├── temp_subscriber.cpp
+| └── README.md
+│
+├── screenshots/
+│
+└── README.md
 │
 ├── screenshots/
 │
@@ -113,6 +146,13 @@ ros2 run cpp_pub_sub subscriber
 ros2 run battery_monitor battery_publisher
 ros2 run battery_monitor battery_subscriber
 ```
+
+# 3. Temperature Monitoring
+```bash
+ros2 run temperature_sensor temperature_publisher
+ros2 run temperature_sensor temperature_subscriber
+```
+
 ---
 
 📸 Sample Output
@@ -130,6 +170,7 @@ ros2 run battery_monitor battery_subscriber
 ros2 topic list
 ros2 topic echo /chatter
 ros2 topic echo /battery_level
+ros2 topic echo /temperature
 ```
 ---
 
@@ -138,7 +179,20 @@ ros2 topic echo /battery_level
 - Modern C++
 - rclcpp
 - Ubuntu Linux
+
 ---
+
+## 💡 Why These Projects Matter
+
+- These projects simulate core subsystems used in real robotic systems:
+
+  - Internal system health monitoring (battery)
+  - Environmental awareness (temperature)
+  - Real-time communication between components
+
+- They serve as the foundation for advanced robotics applications such as autonomous navigation, industrial automation, and intelligent monitoring systems.
+---
+
 ## 🚀 Future Roadmap
 ---
 - 🌡️Temperature Sensor System
@@ -148,6 +202,21 @@ ros2 topic echo /battery_level
 - 🎥 ROS2 + OpenCV Integration
 - 🧭 SLAM Implementation
 
+## 🚀 Next Step (In Progress)
+- 🤖 Multi-Sensor Monitoring System
+
+- Combining:
+
+  - 🔋 Battery Monitoring
+  - 🌡️ Temperature Monitoring
+  - 📏 Distance / Obstacle Detection
+
+- 👉 Goal:
+  - Build a unified system that:
+
+    - Monitors multiple inputs
+    - Makes real-time decisions
+    - Simulates real robotic behavior
 
 🤝 Connect with Me
 ---
