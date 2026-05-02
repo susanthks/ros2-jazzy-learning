@@ -49,14 +49,14 @@ Simulation of a robot battery monitoring system with real-time status evaluation
 Simulates environmental temperature sensing in robotic systems.
 
 **Features:**
-- Random temperature generation (20°C → 80°C)  
-- Real-time monitoring and classification:
-  - ✅ Normal (<40°C)  
-  - ⚠️ High (40–60°C)  
-  - ❌ Critical (>60°C)  
-- Foundation for safety-critical systems  
-
----
+- Real-time temperature data publishing  
+- Continuous temperature reading simulation  
+- Intelligent alert system:
+  - ✅ Temperature Normal (20°C – 30°C)
+  - ⚠️ Temperature Warning (30°C – 40°C)
+  - ❌ Temperature Critical (> 40°C or < 15°C)
+- Configurable sensor frequency
+- Multi-sensor support capability
 
 **Concepts Covered:**
 - ROS2 Nodes  
@@ -65,7 +65,52 @@ Simulates environmental temperature sensing in robotic systems.
 - Real-Time Data Streaming  
 - Callback Mechanisms  
 - Timer-based Execution  
-- State-based Decision Logic   
+- Threshold-based Decision Logic   
+
+---
+
+### 📏 4. Obstacle Detection System
+**Overview:**  
+Simulates obstacle detection using distance sensors in robotic systems.
+
+**Features:**
+- Real-time distance/obstacle detection
+- Multi-sensor support capability
+- Classification system:
+  - ✅ SAFE (> 1.0m)
+  - ⚠️ CAUTION (0.5m – 1.0m)
+  - ❌ OBSTACLE DETECTED! STOP (< 0.5m)
+- ROS2 topic-based communication
+- Publisher/Subscriber pattern
+
+**Concepts Covered:**
+- Distance sensor simulation
+- ROS2 pub/sub patterns
+- Real-time decision making
+- Safety-critical monitoring
+- Callback-driven architecture
+
+---
+
+### 🤖 5. Multi-Sensor Monitoring System
+**Overview:**  
+Integrated monitoring system combining multiple sensor inputs (battery, temperature, distance) for comprehensive robot state monitoring.
+
+**Features:**
+- Aggregates data from multiple sensors
+- Centralized monitoring dashboard
+- Cross-sensor anomaly detection
+- Priority-based alert system
+- Integration of battery, temperature, and obstacle sensors
+- Real-time system health assessment
+
+**Concepts Covered:**
+- Multi-topic subscription
+- Data aggregation and fusion
+- Advanced state machine logic
+- ROS2 message composition
+- Complex callback handling
+- Priority queue implementation
 
 ---
 
@@ -100,15 +145,26 @@ ros2-cpp-learning/
 │
 ├── temperature_sensor/
 │ ├── src/
-│ │ ├── temp_publisher.cpp
-│ │ ├── temp_subscriber.cpp
-| └── README.md
+│ │ ├── temperature_publisher.cpp
+│ │ ├── temperature_subscriber.cpp
+│ ├── CMakeLists.txt
+│ ├── package.xml
+│ └── README.md
 │
-├── screenshots/
+├── obstacle_detection/
+│ ├── src/
+│ │ ├── distance_publisher.cpp
+│ │ ├── distance_subscriber.cpp
+│ ├── CMakeLists.txt
+│ ├── package.xml
+│ └── README.md
 │
-└── README.md
-│
-├── screenshots/
+├── multi_sensor_system/
+│ ├── src/
+│ │ ├── supervisor_node.cpp
+│ ├── CMakeLists.txt
+│ ├── package.xml
+│ └── README.md
 │
 └── README.md
 ```
@@ -153,6 +209,17 @@ ros2 run temperature_sensor temperature_publisher
 ros2 run temperature_sensor temperature_subscriber
 ```
 
+# 4. Obstacle Detection
+```bash
+ros2 run obstacle_detection distance_publisher
+ros2 run obstacle_detection distance_subscriber
+```
+
+# 5. Multi-Sensor Monitoring System
+```bash
+ros2 run multi_sensor_system supervisor_node
+```
+
 ---
 
 📸 Sample Output
@@ -171,6 +238,8 @@ ros2 topic list
 ros2 topic echo /chatter
 ros2 topic echo /battery_level
 ros2 topic echo /temperature
+ros2 topic echo /obstacle_distance
+ros2 topic echo /system_status
 ```
 ---
 
@@ -195,10 +264,10 @@ ros2 topic echo /temperature
 
 ## 🚀 Future Roadmap
 ---
-- 🌡️Temperature Sensor System
-- 📏 Distance / Obstacle Detection System
-- 🤖 Multi-Sensor Monitoring System
-- 🐢 Turtlesim Automation
+- 🐢 Turtlesim Automation & Navigation
+- 🦾 Robotic Arm Control & Manipulation
+- 🗺️ SLAM (Simultaneous Localization and Mapping)
+- 🧭 Path Planning & Obstacle Avoidance
 - 🎥 ROS2 + OpenCV Integration
 - 🧭 SLAM Implementation
 

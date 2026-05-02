@@ -39,7 +39,8 @@ This system simulates a robot’s battery behavior and continuously monitors its
 ---
 
 ## 🏗️ Project Structure
-```bashbattery_monitor/
+```bash
+battery_monitor/
 ├── src/
 │ ├── battery_publisher.cpp
 │ ├── battery_subscriber.cpp
