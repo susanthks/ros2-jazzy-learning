@@ -135,7 +135,7 @@ Integrated monitoring system combining multiple sensor inputs (battery, temperat
 - Priority-based alert system
 - Integration of battery, temperature, and obstacle sensors
 - Real-time system health assessment
-
+- 
 **Concepts Covered:**
 - Multi-topic subscription
 - Data aggregation and fusion
@@ -160,11 +160,13 @@ A complete ROS2 robotics control architecture integrating monitoring and robot c
 - Centralized control center
 - Service–Client robot control
 - Custom ROS2 messages & services
+  
 **Commands Supported**
 - START
 - STOP
 - SAFE_MODE
 - AUTONOMOUS
+  
 **Concepts Learned**
 - Modular robotics architecture
 - Multi-node communication
