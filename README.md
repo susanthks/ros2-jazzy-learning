@@ -160,12 +160,14 @@ A complete ROS2 robotics control architecture integrating monitoring and robot c
 - Centralized control center
 - Service–Client robot control
 - Custom ROS2 messages & services
-**Commands Supported**
+  
+**Commands Supported:**
 - START
 - STOP
 - SAFE_MODE
 - AUTONOMOUS
-**Concepts Learned**
+  
+**Concepts Learned:**
 - Modular robotics architecture
 - Multi-node communication
 - Real-time robotics software design
