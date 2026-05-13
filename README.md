@@ -10,6 +10,21 @@ To build strong foundations in robotics software engineering by implementing cor
 
 ---
 
+# 🚀 Technologies & Concepts
+
+- ROS2 Jazzy
+- Modern C++
+- Publisher–Subscriber Architecture
+- Service–Client Communication
+- Custom ROS2 Messages & Services
+- Multi-node Robotics Systems
+- Robot Monitoring & Safety Systems
+- URDF & RViz
+- Gazebo Simulation (Upcoming)
+
+---
+
+
 ## 📌 Projects
 
 ### 🔹 1. Publisher–Subscriber System (C++)
@@ -92,7 +107,24 @@ Simulates obstacle detection using distance sensors in robotic systems.
 
 ---
 
-### 🤖 5. Multi-Sensor Monitoring System
+### ⚙️ 5. Service–Client System 
+
+A ROS2 service-based robot command system.
+
+**Features**
+- Robot command handling
+- START / STOP commands
+- Request–response architecture
+
+**Concepts Learned**
+- ROS2 Services
+- ROS2 Clients
+- Asynchronous communication
+- Custom .srv files
+
+---
+
+### 🤖 6. Multi-Sensor Monitoring System
 **Overview:**  
 Integrated monitoring system combining multiple sensor inputs (battery, temperature, distance) for comprehensive robot state monitoring.
 
@@ -114,8 +146,32 @@ Integrated monitoring system combining multiple sensor inputs (battery, temperat
 
 ---
 
-### 
 
+---
+
+### 🧠 7. Robot Control Center 
+
+A complete ROS2 robotics control architecture integrating monitoring and robot command systems.
+
+**Features**
+- Battery monitoring
+- Temperature monitoring
+- Obstacle detection
+- Centralized control center
+- Service–Client robot control
+- Custom ROS2 messages & services
+**Commands Supported**
+- START
+- STOP
+- SAFE_MODE
+- AUTONOMOUS
+**Concepts Learned**
+- Modular robotics architecture
+- Multi-node communication
+- Real-time robotics software design
+- Distributed robotic systems
+
+---
 
 ## 🧠 Core Skills Demonstrated
 
@@ -128,43 +184,93 @@ Integrated monitoring system combining multiple sensor inputs (battery, temperat
 ---
 
 ## 🏗️ Repository Structure
+
 ```bash
-ros2-cpp-learning/
+ros2-jazzy-learning/
 │
 ├── cpp_pub_sub/
-│ ├── src/
-│ │ ├── publisher.cpp
-│ │ ├── subscriber.cpp
-│ └── README.md
+│   ├── src/
+│   │   ├── publisher_node.cpp
+│   │   └── subscriber_node.cpp
+│   ├── CMakeLists.txt
+│   ├── package.xml
+│   └── README.md
 │
 ├── battery_monitor/
-│ ├── src/
-│ │ ├── battery_publisher.cpp
-│ │ ├── battery_subscriber.cpp
-│ └── README.md
+│   ├── src/
+│   │   ├── battery_publisher.cpp
+│   │   └── battery_subscriber.cpp
+│   ├── CMakeLists.txt
+│   ├── package.xml
+│   └── README.md
 │
 ├── temperature_sensor/
-│ ├── src/
-│ │ ├── temperature_publisher.cpp
-│ │ ├── temperature_subscriber.cpp
-│ ├── CMakeLists.txt
-│ ├── package.xml
-│ └── README.md
+│   ├── src/
+│   │   ├── temperature_publisher.cpp
+│   │   └── temperature_subscriber.cpp
+│   ├── CMakeLists.txt
+│   ├── package.xml
+│   └── README.md
 │
 ├── obstacle_detection/
-│ ├── src/
-│ │ ├── distance_publisher.cpp
-│ │ ├── distance_subscriber.cpp
-│ ├── CMakeLists.txt
-│ ├── package.xml
-│ └── README.md
+│   ├── msg/
+│   │   └── ObstacleDistance.msg
+│   ├── src/
+│   │   ├── obstacle_publisher.cpp
+│   │   └── obstacle_subscriber.cpp
+│   ├── CMakeLists.txt
+│   ├── package.xml
+│   └── README.md
+│
+├── robot_service_cpp/
+│   ├── srv/
+│   │   └── RobotCommand.srv
+│   ├── src/
+│   │   ├── robot_server.cpp
+│   │   └── robot_client.cpp
+│   ├── CMakeLists.txt
+│   ├── package.xml
+│   └── README.md
 │
 ├── multi_sensor_system/
-│ ├── src/
-│ │ ├── supervisor_node.cpp
-│ ├── CMakeLists.txt
-│ ├── package.xml
-│ └── README.md
+│   ├── src/
+│   │   ├── battery_node.cpp
+│   │   ├── temperature_node.cpp
+│   │   ├── obstacle_node.cpp
+│   │   └── supervisor_node.cpp
+│   ├── launch/
+│   │   └── multi_sensor.launch.py
+│   ├── CMakeLists.txt
+│   ├── package.xml
+│   └── README.md
+│
+├── robot_control_center/
+│   ├── msg/
+│   │   └── RobotStatus.msg
+│   ├── srv/
+│   │   └── RobotCommand.srv
+│   ├── src/
+│   │   ├── battery_publisher.cpp
+│   │   ├── temperature_publisher.cpp
+│   │   ├── control_center.cpp
+│   │   ├── robot_server.cpp
+│   │   └── robot_client.cpp
+│   ├── launch/
+│   │   └── robot_control.launch.py
+│   ├── CMakeLists.txt
+│   ├── package.xml
+│   └── README.md
+│
+├── my_robot_description/
+│   ├── urdf/
+│   │   └── two_wheel_robot.urdf
+│   ├── launch/
+│   │   └── display.launch.py
+│   ├── rviz/
+│   │   └── robot_config.rviz
+│   ├── CMakeLists.txt
+│   ├── package.xml
+│   └── README.md
 │
 └── README.md
 ```
@@ -243,14 +349,6 @@ ros2 topic echo /system_status
 ```
 ---
 
-## 🛠️ Technologies Used
-- ROS2 Jazzy
-- Modern C++
-- rclcpp
-- Ubuntu Linux
-
----
-
 ## 💡 Why These Projects Matter
 
 - These projects simulate core subsystems used in real robotic systems:
@@ -261,6 +359,16 @@ ros2 topic echo /system_status
 
 - They serve as the foundation for advanced robotics applications such as autonomous navigation, industrial automation, and intelligent monitoring systems.
 ---
+
+## 🚀 Upcoming Projects
+- URDF Robot Modeling
+- RViz Visualization
+- Gazebo Simulation
+- Mobile Robot Navigation
+- SLAM & Mapping
+- Autonomous Navigation
+- Computer Vision Integration
+- AI-based Robotics Systems
 
 ## 🚀 Future Roadmap
 ---
@@ -286,6 +394,18 @@ ros2 topic echo /system_status
     - Monitors multiple inputs
     - Makes real-time decisions
     - Simulates real robotic behavior
+
+👨‍💻 About Me
+
+I am a Robotics and AI Engineer passionate about building intelligent real-time robotic systems using:
+
+- ROS2
+- AI & Computer Vision
+- Embedded Systems
+- Autonomous Robotics
+- Industrial Automation
+
+I enjoy developing systems where software, sensing, and robotics come together to solve real-world engineering problems.
 
 🤝 Connect with Me
 ---
