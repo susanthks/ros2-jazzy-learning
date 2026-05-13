@@ -1,0 +1,3 @@
+float32 battery_level
+float32 temperature
+string robot_mode
