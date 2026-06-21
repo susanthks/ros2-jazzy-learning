@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<package format="3">
+
+  <name>my_turtle_pkg</name>
+
+  <version>0.0.0</version>
+
+  <description>Turtlesim learning package using ROS2 Jazzy and Modern C++</description>
+
+  <maintainer email="susanth@example.com">susanth</maintainer>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+
+  <depend>geometry_msgs</depend>
+
+  <depend>turtlesim</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
